@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Trimpa</title> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1"> 
+	<style>*{padding:0;margin:0;border:0}*,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box}:active,:focus{outline:0}header{display:block}body,html{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:"Nunito Sans",Aria,sans-sarif;font-weight:400;font-style:normal;font-size:18px}button,input{font-family:inherit}input::-ms-clear{display:none}button::-moz-focus-inner{padding:0;border:0}a,a:visited{text-decoration:none}ul li{list-style:none}img{max-width:100%}h1,h3{font-size:inherit}.wrapper{overflow:hidden}header{padding:23.5px 0 23.5px 0}header .container{max-width:1430px;padding:0 10px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}header .container .navigation{display:flex;justify-content:space-between}header .container .navigation__item{margin-left:16px}header .container .navigation__item a{padding:13px 20px;color:#7c8db0;border-radius:4px;display:block}.main{background:url(img/Hero.png) 50%/cover no-repeat;padding:93.5px 10px 245.5px 10px;margin:0 auto;max-width:1440px}.main .container{max-width:1203px;padding:0 10px;margin:0 auto}.main .container .title-90{margin:0 auto;max-width:756px}.search{border-radius:4px 0 4px 4px;border:solid rgba(140,155,186,.5);border-width:1px 0 1px 1px;margin-top:48px;-webkit-box-shadow:0 5px 10px 2px rgba(34,60,80,.16);-moz-box-shadow:0 5px 10px 2px rgba(34,60,80,.16);box-shadow:0 5px 10px 2px rgba(34,60,80,.16)}.search__field{border:1px solid rgba(140,155,186,.5);padding:11.5px 0 11.5px 69px;font-family:"Nunito Sans";font-weight:400;font-style:normal;font-size:18px;color:#7c8db0;border:solid rgba(140,155,186,.5);border-width:0 .5px 0 .5px;border-radius:0}.search .from{background:#fff url(img/plane-up.svg) 8% 50% no-repeat;position:relative;width:324px}.search .to{background:#fff url(img/plane-down.svg) 8% 50% no-repeat;width:324px}.search .date{background:#fff url(img/calendar.svg) 8% 50% no-repeat;width:252px}.search .person{background:#fff url(img/person.svg) 8% 50% no-repeat;width:200px}.search__btn{background-color:#605dec;padding:11.5px 13px;font-size:18px;color:#fafafa}.where-block{position:absolute;margin-left:24px;width:300px;height:312px;background-color:#fff;border:.5px solid rgba(140,155,186,.5);border-radius:8px;-webkit-box-shadow:0 5px 10px 2px rgba(34,60,80,.16);-moz-box-shadow:0 5px 10px 2px rgba(34,60,80,.16);box-shadow:0 5px 10px 2px rgba(34,60,80,.16);overflow-y:scroll;display:none}.where-block__item{margin:14.5px 15.5px 7px 16px;background-color:#605dec;padding:5px 0 5px 10px;border-radius:4px;color:#fafafa;font-size:16px}.to-block{position:absolute;margin-left:348px;width:300px;height:312px;background-color:#fff;border:.5px solid rgba(140,155,186,.5);border-radius:8px;-webkit-box-shadow:0 5px 10px 2px rgba(34,60,80,.16);-moz-box-shadow:0 5px 10px 2px rgba(34,60,80,.16);box-shadow:0 5px 10px 2px rgba(34,60,80,.16);overflow-y:scroll;display:none}.to-block__item{margin:14.5px 15.5px 7px 16px;background-color:#605dec;padding:5px 0 5px 10px;border-radius:4px;color:#fafafa;font-size:16px}.find{padding:40px 0}.find .container{max-width:1312px;padding:0 10px;margin:0 auto}.title{padding-bottom:24px;font-size:24px;font-weight:700;display:flex;justify-content:space-between}.title__24{color:#6e7491}.title__24--violet{color:#605dec}.title__arr{font-weight:400;margin-right:33px;color:#a1b0cc;position:relative;display:block}.title__arr:after{content:"";background:url(img/arr-right.svg) no-repeat;top:3px;margin-left:10px;width:23px;height:17px;position:absolute}.place{display:flex;justify-content:space-between;padding-bottom:40px}.place__item{max-width:410px;-webkit-box-shadow:0 5px 10px 2px rgba(34,60,80,.16);-moz-box-shadow:0 5px 10px 2px rgba(34,60,80,.16);box-shadow:0 5px 10px 2px rgba(34,60,80,.16);border-radius:12px}.place__item--img{border-radius:12px 12px 0 0}.place__item--title-18{color:#6e7491;font-size:18px;font-weight:700;padding:16px 24px 4px 16px;display:flex;justify-content:space-between}.place__item--title-18 .city{color:#605dec}.place__item--title-18 .price{margin-left:50px}.place__item--title-16{color:#6e7491;padding:0 24px 16px 16px}.place-main{-webkit-box-shadow:0 5px 10px 2px rgba(34,60,80,.16);-moz-box-shadow:0 5px 10px 2px rgba(34,60,80,.16);box-shadow:0 5px 10px 2px rgba(34,60,80,.16);border-radius:12px 12px 12px 12px}.place-main__img{border-radius:12px 12px 0 0}.place-main__title-18{display:flex;justify-content:space-between;padding:16px 24px 4px 24px;color:#6e7491;font-size:18px;font-weight:700}.place-main__title-18--text .city{color:#605dec}.place-main__title-16{color:#6e7491;font-size:16px;padding:0 24px 16px 24px}.place{padding:40px 0}</style>
+	<link rel="stylesheet" type="text/css" href="styles/main.css" media="print" onload="this.media='all'">
+	
+	<link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="favicons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+<div class="wrapper">
+	<header>
+		<div class="container">
+			<div class="logo">
+				<a href="#"><img src="img/logo.svg" alt="Trimpa"></a>
+			</div>
+			<ul class="navigation">
+				<li class="navigation__item"><a href="#">Flights</a></li>
+				<li class="navigation__item"><a href="#">Hotels</a></li>
+				<li class="navigation__item"><a href="#">Packages</a></li>
+				<li class="navigation__item"><a href="#">Sign in</a></li>
+				<li class="navigation__item"><a href="#">Sign up</a></li>
+			</ul>
+		</div>
+	</header>
+	<div class="main">
+		<div class="container">
+			<h1 class = "title-90"><img src="img/h1-text.png" alt=""></h1>                                            <!--PICTURE-->
+			<div class="search">
+				<input id="from" class="from search__field" type="text" value ="From where?"><input id="to" class="to search__field" type="text" value ="Where to?"><input class="date search__field" type="text" value ="Depart - Return"><input class="person search__field" type="text" value ="1 adult"><button class="search__btn">Search</button>
+				<ul id="where-block" class=" where-block">
+					<li class="where-block__item">SFO</li>
+					<li class="where-block__item">ATL</li>
+					<li class="where-block__item">LAX</li>
+					<li class="where-block__item">STL</li>
+					<li class="where-block__item">PVG</li>
+					<li class="where-block__item">MSP</li>
+					<li class="where-block__item">NRT</li>
+					<li class="where-block__item">JFK</li>
+				</ul>
+
+
+				<ul id="to-block" class=" to-block">
+					<li class="to-block__item">SFO</li>
+					<li class="to-block__item">ATL</li>
+					<li class="to-block__item">LAX</li>
+					<li class="to-block__item">STL</li>
+					<li class="to-block__item">PVG</li>
+					<li class="to-block__item">MSP</li>
+					<li class="to-block__item">NRT</li>
+					<li class="to-block__item">JFK</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="find">
+		<div class="container">
+			<div class="title">
+				<h3 class="title__24">Find your next adventure with these <span class="title__24--violet">flight deals</span></h3>
+				<a class="title__arr" href="#">All</a>
+			</div>
+			<div class="place">
+				<div class="place__item">
+					<img class="place__item--img" src="img/shanghai.jpg" alt="Shanghai">
+					<div class="place__item--title-18">
+						<p class="city-text">
+							The Bund,<span class="city"> Shanghai</span>
+						</p>
+						<p class="price">
+							$598
+						</p>
+					</div>
+					<p class="place__item--title-16">China’s most international city</p>
+				</div>
+				<div class="place__item">
+					<img class="place__item--img" src="img/sydney.jpg" alt="Sydney">
+					<div class="place__item--title-18">
+						<p class="city-text">
+							Sydney Opera House,<span class="city">Sydney</span>
+						</p>
+						<p class="price">
+							$981
+						</p>
+					</div>
+					<p class="place__item--title-16">Take a stroll along the famous harbor</p>
+				</div>
+				<div class="place__item">
+					<img class="place__item--img" src="img/kyoto.jpg" alt="Kyoto">
+					<div class="place__item--title-18">
+						<p class="city-text">
+							Kōdaiji Temple,<span class="city"> Kyoto</span>
+						</p>
+						<p class="price">
+							$633
+						</p>
+					</div>
+					<p class="place__item--title-16">Step back in time in the Gion district</p>
+				</div>
+			</div>
+			<div class="place-main">
+				<img class="place-main__img" src="img/kenya.jpg" alt="Kenya">
+				<div class="place-main__title-18">
+					<p class="place-main__title-18--text">Tsavo East National Park,<span class="city"> Kenya</span></p>
+					<p class="price">$1,248</p>
+				</div>
+				<p class="place-main__title-16">
+					Named after the Tsavo River, and opened in April 1984, Tsavo East National Park is one of the oldest parks in Kenya. It is located in the semi-arid Taru Desert.
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="place">
+		<div class="container">
+			<div class="title">
+				<p class="title__tit24">
+					Explore unique <span class="title__tit24--color">places to stay</span> 
+				</p>
+				<a class="title__link">
+                    All
+				</a>
+			</div>
+			<div class="content">
+				<div class="content__item">
+					<img class="content__item--img" src="img/maldives.jpg" alt="Maldives">
+					<div class="content__item--text">
+						<p class="title-place">
+							Stay among the atolls in <span class="title-place__color">Maldives</span> 
+						</p>
+						<p class="text">From the 2nd century AD, the islands were known as the 'Money Isles' due to the abundance of cowry shells, a currency of the early ages.</p>
+					</div>
+				</div>
+				<div class="content__item">
+					<img class="content__item--img" src="img/morocco.jpg" alt="Morocco">
+					<div class="content__item--text">
+						<p class="title-place">Experience the Ourika Valley in <span class="title-place__color">Morocco</span></p>
+						<p class="text">Morocco’s Hispano-Moorish architecture blends influences from Berber culture, Spain, and contemporary artistic currents in the Middle East.</p>
+					</div>
+				</div>
+				<div class="content__item">
+					<img class="content__item--img" src="img/mongolia.jpg" alt="Mongolia">
+					<div class="content__item--text">
+						<p class="title-place">Live traditionally in <span class="title-place__color">Mongolia</span></p>
+						<p class="text">Traditional Mongolian yurts consists of an angled latticework of wood or bamboo for walls, ribs, and a wheel.</p>
+					</div>
+				</div>
+			</div>
+			<a class="place-btn" href="#">
+				Explore more stays
+			</a>
+		</div>
+	</div>
+
+
+
+	<div class="comments">
+		<h3 class="comments-title">What <span class="comments-title__color">Tripma</span> users are saying</h3>
+		<div class="container">
+			
+			<div class="comments-item">
+				<img src="img/user-1.png" alt="User">
+				<div class="comments-item__content">
+					<p class="comments-item__content--name">
+						Yifei Chen
+					</p>
+					<p class="comments-item__content--city">
+						Seoul, South Korea | April 2019
+					</p>
+					<p class="comments-item__content--star">
+						<img src="img/full-star.svg" alt="star">
+						<img src="img/full-star.svg" alt="star">
+						<img src="img/full-star.svg" alt="star">
+						<img src="img/full-star.svg" alt="star">
+						<img src="img/full-star.svg" alt="star">
+					</p>
+					<p class="comments-item__content--comment">
+						What a great experience using Tripma! I booked all of my flights for my gap year through Tripma and never had any issues. When I had to cancel a flight because of an emergency, Tripma support helped me <span class="color-link">read more...</span>
+					</p>
+				</div>
+			</div>
+			<div class="comments-item">
+				<img src="img/user-2.png" alt="User">
+				<div class="comments-item__content">
+					<p class="comments-item__content--name">
+						Kaori Yamaguchi
+					</p>
+					<p class="comments-item__content--city">
+						Honolulu, Hawaii | February 2017
+					</p>
+					<p class="comments-item__content--star">
+						<img src="img/full-star.svg" alt="star">
+						<img src="img/full-star.svg" alt="star">
+						<img src="img/full-star.svg" alt="star">
+						<img src="img/full-star.svg" alt="star">
+						<img src="img/star.svg" alt="star">
+					</p>
+					<p class="comments-item__content--comment">
+						My family and I visit Hawaii every year, and we usually book our flights using other services. Tripma was recommened to us by a long time friend, and I’m so glad we tried it out! The process was easy and <span class="color-link">read more...</span>
+					</p>
+				</div>
+			</div>
+			<div class="comments-item">
+				<img src="img/user-3.png" alt="User">
+				<div class="comments-item__content">
+					<p class="comments-item__content--name">
+						Anthony Lewis
+					</p>
+					<p class="comments-item__content--city">
+						Berlin, Germany | April 2019
+					</p>
+					<p class="comments-item__content--star">
+						<img src="img/full-star.svg" alt="star">
+						<img src="img/full-star.svg" alt="star">
+						<img src="img/full-star.svg" alt="star">
+						<img src="img/full-star.svg" alt="star">
+						<img src="img/full-star.svg" alt="star">
+					</p>
+					<p class="comments-item__content--comment">
+						When I was looking to book my flight to Berlin from LAX, Tripma had the best browsing experiece so I figured I’d give it a try. It was my first time using Tripma, but I’d definitely recommend it to a friend and use it for <span class="color-link">read more...</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		
+			<div class="footer-top">
+				<div class="container">
+					<div class="footer-top__content">
+					<a href="#"><img src="img/logo.svg" alt="Trimpa"></a>
+				</div>
+				<div class="footer-top__content">
+					<p class="footer-top__content--title">
+						About
+					</p>
+					<a href="#" class="footer-top__content--link">About Tripma</a>
+					<a href="#" class="footer-top__content--link">How it works</a>
+					<a href="#" class="footer-top__content--link">Careers</a>
+					<a href="#" class="footer-top__content--link">Press</a>
+					<a href="#" class="footer-top__content--link">Blog</a>
+					<a href="#" class="footer-top__content--link">Forum</a>
+				</div>
+				<div class="footer-top__content">
+					<p class="footer-top__content--title">Partner with us</p>
+					<a href="#" class="footer-top__content--link">Partnership programs</a>
+					<a href="#" class="footer-top__content--link">Affiliate program</a>
+					<a href="#" class="footer-top__content--link">Connectivity partners</a>
+					<a href="#" class="footer-top__content--link">Promotions and events</a>
+					<a href="#" class="footer-top__content--link">Integrations</a>
+					<a href="#" class="footer-top__content--link">Community</a>
+					<a href="#" class="footer-top__content--link">Loyalty program</a>
+				</div>
+				<div class="footer-top__content">
+					<p class="footer-top__content--title">Support</p>
+					<a href="#" class="footer-top__content--link">Help Center</a>
+					<a href="#" class="footer-top__content--link">Contact us</a>
+					<a href="#" class="footer-top__content--link">Privacy policy</a>
+					<a href="#" class="footer-top__content--link">Terms of service</a>
+					<a href="#" class="footer-top__content--link">Trust and safety</a>
+					<a href="#" class="footer-top__content--link">Accessibility</a>
+				</div>
+				<div class="footer-top__content">
+					<p class="footer-top__content--title">Get the app</p>
+					<a href="#" class="footer-top__content--link">Tripma for Android</a>
+					<a href="#" class="footer-top__content--link">Tripma for iOS</a>
+					<a href="#" class="footer-top__content--link">Mobile site</a>
+					<a href="#" class="footer-top__content--link">
+						<img src="img/app-store.jpg" alt="Apple-store">
+					</a>
+					<a href="#" class="footer-top__content--app">
+						<img src="img/google-play.jpg" alt="Google-play">
+					</a>
+				</div>
+				</div>
+				
+			</div>
+			<hr>
+			<div class="footer-bot">
+				<div class="container">
+				<div class="footer-bot-media">
+					<a class="footer-bot-media__items" href="#">
+						<img class="media-img" src="img/twitter.svg" alt="Twitter">
+					</a>
+					<a class="footer-bot-media__items" href="#">
+						<img class="media-img" src="img/inst.svg" alt="Instagram">
+					</a>
+					<a class="footer-bot-media__items" href="#">
+						<img class="media-img" src="img/facebook.svg" alt="Facebook">
+					</a>
+				</div>
+				<div class="footer-bot-copy">
+					&copy 2020 Tripma incorporated
+				</div>
+				</div>
+				
+			</div>
+		
+	</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+</div>
+	
+
+<script type='module' src="scripts/main.js"></script>
+
+
+
+<noscript><link rel="stylesheet" type="text/css" href="styles/main.css"></noscript>
+
+
+</body>
+</html>

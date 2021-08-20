@@ -1,0 +1,34 @@
+header{
+	padding: 23.5px 0 23.5px 0;
+
+	.container{
+		max-width: 1430px;
+		padding: 0 10px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.navigation{
+			display: flex;
+			justify-content: space-between;
+
+			&__item{
+				margin-left: 16px;
+				
+				a{	
+					padding: 13px 20px;
+					color:$border;
+					border-radius: 4px;
+					display: block;
+					transition: .3s;
+						
+					&:hover{
+						background-color: $violet;
+						color:$gray;
+					}
+				}
+			}
+		}
+	}
+}

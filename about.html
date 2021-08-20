@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JS FE</title> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1"> 
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<style>
+	*{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+
+	body{
+		padding: 30px;
+	}
+
+	.skill{
+		display: inline-block;
+	}
+	.progressbar{
+		width: 27vw;
+		border: 1px solid black;
+		height: 10px;
+		border-radius: 5px;
+		position: relative;
+		margin-right: 2vw;
+	}
+	.progress{
+		height: 100%;
+		width: 0px;
+		background: green;
+	}
+
+	#scroll{
+		height: 2000px;
+		background: yellow;
+	}
+
+	.count {
+		position: absolute;
+		top: 5px;
+		right: -15px;
+		font-size: 20px;
+	}
+
+	</style>
+</head>
+<body>
+
+	<h1 id="scroll">dgfgdohkgfpogjdfj</h1>
+
+
+	<section id="skills">
+		<h2>My expertise</h2>
+
+		<div class="skill">
+			<h5>HTML</h5>
+			<div class="progressbar">
+				<div data-max="90" class="progress"></div>
+				<span class="count"></span>
+			</div>
+		</div>
+
+		<div class="skill">
+			<h5>CSS</h5>
+			<div class="progressbar">
+				<div data-max="87" class="progress"></div>
+				<span class="count"></span>
+			</div>
+		</div>
+
+		<div class="skill">
+			<h5>Javascript</h5>
+			<div class="progressbar">
+				<div data-max="60" class="progress"></div>
+				<span class="count"></span>
+			</div>
+		</div>
+	</section>
+	<section id="scroll"></section>
+
+
+
+<script src="scripts/main.js"></script>
+
+</body>
+</html>
