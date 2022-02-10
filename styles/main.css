@@ -153,48 +153,16 @@ header .container .navigation__item a:hover {
 }
 
 .search {
-  border-radius: 4px 0 4px 4px;
+  border-radius: 4px 4px 4px 4px;
   border: solid rgba(140, 155, 186, 0.5);
-  border-width: 1px 0 1px 1px;
+  border-width: 1px 1px 1px 1px;
   margin-top: 48px;
   -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.16);
   -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.16);
   box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.16);
-}
-.search__field {
-  border: 1px solid rgba(140, 155, 186, 0.5);
-  padding: 11.5px 0 11.5px 69px;
-  font-family: "Nunito Sans";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 18px;
-  color: #7C8DB0;
-  border: solid rgba(140, 155, 186, 0.5);
-  border-width: 0 0.5px 0 0.5px;
-  border-radius: 0;
-}
-.search .from {
-  background: #fff url(../img/plane-up.svg) 8% 50% no-repeat;
-  position: relative;
-  width: 324px;
-}
-.search .to {
-  background: #fff url(../img/plane-down.svg) 8% 50% no-repeat;
-  width: 324px;
-}
-.search .date {
-  background: #fff url(../img/calendar.svg) 8% 50% no-repeat;
-  width: 252px;
-}
-.search .person {
-  background: #fff url(../img/person.svg) 8% 50% no-repeat;
-  width: 200px;
-}
-.search__btn {
-  background-color: #605DEC;
-  padding: 11.5px 13px;
-  font-size: 18px;
-  color: #FAFAFA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .where-block {
@@ -255,6 +223,14 @@ header .container .navigation__item a:hover {
 
 .active {
   display: block;
+}
+
+.active-item {
+  background-color: #2CC6AA;
+}
+
+.hidden {
+  display: none;
 }
 
 .find {

@@ -44,30 +44,45 @@
 	<div class="main">
 		<div class="container">
 			<h1 class = "title-90"><img src="img/h1-text.png" alt=""></h1>                                            <!--PICTURE-->
-			<div class="search">
-				<input id="from" class="from search__field" type="text" value ="From where?"><input id="to" class="to search__field" type="text" value ="Where to?"><input class="date search__field" type="text" value ="Depart - Return"><input class="person search__field" type="text" value ="1 adult"><button class="search__btn">Search</button>
-				<ul id="where-block" class=" where-block">
-					<li class="where-block__item">SFO</li>
-					<li class="where-block__item">ATL</li>
-					<li class="where-block__item">LAX</li>
-					<li class="where-block__item">STL</li>
-					<li class="where-block__item">PVG</li>
-					<li class="where-block__item">MSP</li>
-					<li class="where-block__item">NRT</li>
-					<li class="where-block__item">JFK</li>
-				</ul>
+			<div class="search" id="search">
 
 
-				<ul id="to-block" class=" to-block">
-					<li class="to-block__item">SFO</li>
-					<li class="to-block__item">ATL</li>
-					<li class="to-block__item">LAX</li>
-					<li class="to-block__item">STL</li>
-					<li class="to-block__item">PVG</li>
-					<li class="to-block__item">MSP</li>
-					<li class="to-block__item">NRT</li>
-					<li class="to-block__item">JFK</li>
-				</ul>
+				<div class="search__block">
+					<input list="from" class="search__block" value="From where?">
+					<datalist id="from">
+						
+					</datalist>
+						<!-- <option value="SFO"> 
+						<option value="ATL"> 
+						<option value="LAX"> 
+						<option value="STL"> 
+						<option value="PVG"> 
+						<option value="MSP"> 
+						<option value="NRT"> 
+						<option value="JFK"> -->
+				</div>
+				<div class="search__block">
+					<input list="to" class="search__from" value="Where to?">
+					<datalist id="to">
+						<option value="SFO"> 
+						<!-- <option value="ATL"> 
+						<option value="LAX"> 
+						<option value="STL"> 
+						<option value="PVG"> 
+						<option value="MSP"> 
+						<option value="NRT"> 
+						<option value="JFK"> -->
+					</datalist>
+				</div>
+				<div class="search__block">
+					<input type="date">
+				</div>
+				<div class="search__block">
+					<input type="text" value="1 adult">
+				</div>
+				<div class="search__block">
+					<button>Search</button>
+				</div>
 			</div>
 		</div>
 	</div>
