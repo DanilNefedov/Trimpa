@@ -24,6 +24,14 @@
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
+
+
+
+	<script type="text/javascript" src="calendar/codebase/calendar.js"></script>
+	<link rel="stylesheet" href="calendar/codebase/calendar.css">
+
+
+
 </head>
 <body>
 <div class="wrapper">
@@ -48,25 +56,52 @@
 
 
 				<div class="search__block">
-					<input list="from" class="search__block" value="From where?">
+					<label for="inp-from" class="search__img plane-up"></label>
+					<input list="from" class="search__from" value="From where?" id="inp-from">
 					<datalist id="from">
 						
 					</datalist>
 				</div>
 				<div class="search__block">
-					<input list="to" class="search__from" value="Where to?">
+					<label for="inp-from" class="search__img plane-down"></label>
+					<input list="to" class="search__to" value="Where to?">
 					<datalist id="to">
 						
 					</datalist>
 				</div>
 				<div class="search__block">
-					<input type="date">
+					<label for="inp-calendar" class="search__img calendar"></label>
+					<input class="search__calendar" id="inp-calendar" value="Depart - Arrive">
+
+
+
+
+
+					<div class="calendar-show">
+						<div class="calendar-show__inp">
+							<label for="inp-calendar" class="search__img calendar"></label>
+							<input class="search__calendar" value="Depart - Arrive">
+							<button class="calendar-show__btn">Done</button>
+						</div>
+						
+						<div class="calendar-show__block">
+							<div id="calendar-show__container"></div>
+							<div id="calendar-show__resultFrom"></div>
+							<div id="calendar-show__resultTo"></div>
+						</div>
+					</div>
+
+
+
+
+
 				</div>
 				<div class="search__block">
-					<input type="text" value="1 adult">
+					<label for="inp-adult" class="search__img adult"></label>
+					<input type="text" value="1 adult" id="inp-adult" class="search__adult">
 				</div>
 				<div class="search__block">
-					<button>Search</button>
+					<button onclick="find()" class="search__btn">Search</button>
 				</div>
 			</div>
 		</div>
@@ -315,7 +350,6 @@
 				</div>
 				
 			</div>
-		
 	</footer>
 
 

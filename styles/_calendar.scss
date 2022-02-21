@@ -1,0 +1,13 @@
+.calendar-show{
+    position: absolute;
+    width: 642px;
+    border: 1px solid $gary-border;
+}
+
+#calendar-show__container{
+    display: flex;
+}
+.calendar-show__inp{
+    display: flex;
+    justify-content: flex-end;
+}
